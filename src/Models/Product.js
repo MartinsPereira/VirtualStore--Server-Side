@@ -24,23 +24,21 @@ const ProductSchema = new mongoose.Schema({
   color:[{
     type:  mongoose.Schema.Types.ObjectId,
     ref: "Color",
-    required: true
   }],
   size: [{
     type: mongoose.Schema.Types.ObjectId,
     ref: "Size",
-    required: true,
   }],
-  category:[{
+  category:{
     type: mongoose.Schema.Types.ObjectId,
     ref: "Category",
     required: true,
-  }],
-  type:[{
+  },
+  type:{
     type: mongoose.Schema.Types.ObjectId,
     ref: "TypeProduct",
     required: true,
-  }],
+  },
   brand:{
     type: mongoose.Schema.Types.ObjectId,
     ref: "Brand",
